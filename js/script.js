@@ -37,6 +37,8 @@ function NumbersGiven() {
 
       // Initializing the counter to the ending number
       let counter = endNumber;
+
+      // Do..While loop that specifies that the code within the loop executes as long as the counter is greater than or equal to the starting number
       do {
 
         // If statement checks for the even numbers while loop runs(counter % 2 == 0 checks that remainder is 0, meaning that number is divisible by 2 (even number))
