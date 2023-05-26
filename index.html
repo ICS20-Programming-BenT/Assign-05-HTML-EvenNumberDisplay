@@ -48,22 +48,26 @@
       <!-- Body text -->
       <p>Welcome! This webpage will display all the even numbers between any two positive numbers of your choice.</p>
       <h3>Your Input:</h3>
-
-      <p>Check this box if you want the numbers to list in reverse order. Otherwise, leave it unchecked.</p>
-      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="reverse-yes">
-        <input type="checkbox" id="reverse-yes" class="mdl-checkbox__input">
-        <span class="mdl-checkbox__label">List in reverse!</span>
-      </label>
-      <br>
-      <br>
       
       <!-- Form for user input -->
       <form action="javascript:NumbersGiven()">
         <label for="start-number">Enter a starting number:</label>
         <input type="number" id="start-number" placeholder="Starting number..."><br><br>
         <label for="end-number">Enter an ending number:</label>
-        <input type="number" id="end-number" placeholder="Ending number..."><br><br>
-        <input type="submit" id="button" value="Submit Your Numbers!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+        <input type="number" id="end-number" placeholder="Ending number..."><br><br><br>
+        
+        <!-- Radio button to ask user whether or not to display numbers in reverse order -->
+        <label>Would you like the sequence of numbers to display in reverse order?</label><br><br>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="reverse-yes">
+          <input type="radio" id="reverse-yes" class="mdl-radio__button" name="options" value="1">
+          <span class="mdl-radio__label">Yes</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="reverse-no">
+          <input type="radio" id="reverse-no" class="mdl-radio__button" name="options" value="2">
+          <span class="mdl-radio__label">No</span>
+        </label>
+         <br><br>
+          <input type="submit" id="button" value="Submit Your Numbers!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
       </form>
       <br>
       
